@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+
+<!-- Add your scripts here -->
+
+
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/Main.png" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Osama Rehman.</span>
+                </h1>
+                <p>
+                    Welcome to my portfolio! I'm a passionate game developer with a deep love for creating immersive and captivating gaming experiences.
+                    I strive to bring simple yet captivating worlds to life.
+                    Join me on this humble journey through the art of game development, where every project is an opportunity to learn and grow.
+                </p>
+                <a href="#" class="rounded-button" onclick="scrollToSectionAndControl('portfolio')">
+                    <span>View Portfolio</span>
+                    <i class="fas fa-briefcase rounded-button-icon"></i>
+                    <!-- Add a hidden control button for the desired section -->
+                    <div class="control" data-id="portfolio" style="display: none;"></div>
+                  </a>
+
+                  
+                  
+               
+                
+                <!-- <div class="btn-con">
+                    <a href="" class="portfolio-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p>
+                        Greetings and welcome to my professional profile! My journey into the realm of game development began with the discovery of Unity, 
+                        a platform whose charm, versatility, and user-friendly interface immediately resonated with me. 
+                        Armed with a Bachelor's degree in Computer Science from Sir Syed University of Engineering and Technology, 
+                        I have dedicated myself to the pursuit of excellence in video game development.
+
+                    </p>
+                    <div class="btn-con">
+                        <a href="#" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">35+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">5</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
+                    </div>
+                    <!-- <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">300+</p>
+                            <p class="small-text">Happy <br /> Clients</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">400+</p>
+                            <p class="small-text">Customer <br /> reviews</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">C#</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Unity</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Photon</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Adobe Suite</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">VR</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">C++</p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">Oct 2021 - present</p>
+                    <h5>Lead Gamification Developer<span> - Intwish</span></h5>
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Leading Unity-based metaverse-style project with Photon for multiplayer, friend features, and Agora for live streaming. 
+                        Developing a diverse character creator for user avatar customization. 
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Spearheaded transformative training simulation for the Saudi Business Center (SBC) for PC, iOS, and Android platforms. 
+                        Orchestrated sophisticated dialogue system and robust character customization with 200+ outfits. 
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;"> 
+                        ● Led initiative for a comprehensive training simulation for Daraz riders, focusing on delivery ethics. 
+                        Took charge of the game's codebase, ensuring flawless functionality across all devices. 
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Developed realistic driving simulations using Logitech steering wheel controls. Later, transformed simulations into fully
+                        immersive VR experiences for new drivers.
+                    </p>
+                    
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">Sep 2020 - Jan 2021</p>
+                    <h5>Game Developer (Part-time)<span> - Blame Games</span></h5>
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Contributed to the development of the cricket board game "Crickster" as a Functional Developer.
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Led the implementation of crucial game mechanics, including Dice Roll, Score Management, and Card System.
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Collaborated with a team of 4 senior developers to ensure effective codebase management using GitHub.
+                    </p>
+                    
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">Jun 2021 - Oct 2021</p>
+                    <h5>Senior Game Developer (Contract)<span> - Mizo Studios</span></h5>
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Crafted two in-house games for Android and iOS, spanning arcade beat 'em up and racing genres, showcasing a versatile skill set in game development. 
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Engineered well-structured solutions for both games, prioritizing efficiency and scalability, resulting in robust and maintainable codebases. 
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Demonstrated agility by swiftly implementing new features and addressing live project bugs, guided by insightful user data analysis.
+                    </p>
+                </div>
+                <!-- <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">Sep 2020 - Jan 2021</p>
+                    <h5>Game Developer (Part-time)<span> - Brighton</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div> -->
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">Feb 2019 - Oct 2019</p>
+                    <h5>Game Developer<span> - Dreamnode Studio</span></h5>
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Contributed to the development of hyper-casual games such as "Missile Impossible."
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Created prototypes for various game ideas to explore innovative concepts and gameplay mechanics.
+                    </p>
+                    
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">Oct 2019 - Feb 2021</p>
+                    <h5>Game Developer<span> - The Gamestorm Studios</span></h5>
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Contributed to 10+ games on Android and iOS, spanning racing, beat 'em up, puzzle, and arcade genres, showcasing diverse creative capabilities. 
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Implemented effective monetization with in-app purchases, ads, and a daily rewards system, optimizing revenue streams. 
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Developed intricate HLSL shaders for immersive visual appeal and realism in game environments.
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Collaborated with the design team to create a modular visual effects library, enhancing projects with minimal performance impact on iOS and Android devices. 
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Delivered clean and well-structured code, emphasizing maintainability and scalability to ensure the longevity of projects.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">Jul 2015 - Dec 2018</p>
+                    <h5>Bachelors Computer Science<span> - Sir Syed University Of Engineering and Technology</span></h5>
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Graduated with a CGPA of 3.4, showcasing dedication to academic excellence and proficiency in coursework.
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Won 1st place in the university event (SMEC 2018) for animation and design using 3ds Max and Blender, highlighting exceptional skills and creativity in 3D modeling and animation.
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Won 1st place in IT Fair 2015 for creating a time-attack car game using Unreal Engine 4.
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Won 1st place in Interdepartmental Software Competition for creating a 2D Bullet Hell using XNA Studios.
+                    </p>
+                    
+                    <p style="font-size: 14px; margin-bottom: 10px;">
+                        ● Headed the Graphic Design and Multimedia Club at SMEC 2019, demonstrating strong leadership skills and fostering a creative community within the university.
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>Port<span>folio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is a compilation of some of the projects I've worked on, both as part of my professional portfolio and during personal endeavors.
+            </p>
+           
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/SBC2.gif" alt="" loading="lazy">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Reaching the Top - RPG Visual Novel</h3>
+                        <div class="portfolioTextgrid">
+                        
+                        
+                        <p>
+                            <span style="font-size: 20px;"><b>Overview: </b></span>
+                           <br><br>
+                          "Reaching the Top" is an RPG visual novel exclusively designed for the Saudi Business Center (SBC). 
+                          I led a team of two developers and two designers to bring this project to life over a year.
+                        </p>
+                        
+                        
+                        <p> 
+                            <span style="font-size: 20px;"><b>Highlights:</b></span>
+                            <br><br>
+                          <b>Character Customization:</b> Personalize avatars for a unique gaming experience.
+                          <br>
+                          <b>Cloud Saves:</b> Secure cloud save system for seamless gameplay across devices.
+                          <br>
+                          <b>Robust Dialogue System:</b> Intricate system considering emotions for an immersive narrative.
+                        </p>
+                        
+                       
+                        <p> 
+                            <span style="font-size: 20px;"> <b>Role and Achievements:</b></span>
+                            <br><br>
+                          <b>Leadership and Implementation:</b> Spearheaded development, overseeing gameplay mechanics and dialogue.
+                          <br>
+                          <b>Collaborative Teamwork:</b> Managed a team of two developers and two designers, ensuring seamless integration.
+                        </p>
+                    </div>
+                        <br>
+                        <!-- <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/AdanaRPG.gif" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Adana Chronicles - Freelance RPG Prototype</h3>
+                       
+
+                         <div class="portfolioTextgrid">
+                           
+                            <p>
+                                <span style="font-size: 20px;"><b>Overview: </b></span><br><br>
+                                Adana Chronicles, a freelance RPG prototype on Fiverr, creatively utilizes Blink's RPG Builder kit for a unique gaming experience. 
+                                Introduced RPG Maker kit elements, enhancing combat and movement dynamics.
+                            </p>
+                            
+                            <p>
+                                <span style="font-size: 20px;"><b>Role and Achievements: </b></span><br><br>
+                                <b>Combat Dynamics: </b> Developed strategic in-game systems for elevated RPG experiences.<br><br>
+                                <b>Movement Features: </b> Implemented dynamic mechanics, fostering immersive exploration.
+                            </p>
+                            
+                            <p>
+                                <br><br>
+                                <b>Environment Design: </b> Crafted engaging game environments to enhance narrative and player engagement.<br><br>
+                                <b>Post-Processing: </b> Implemented visual effects for a polished, atmospheric gaming experience.
+                            </p>
+                            
+                            
+                         </div>
+                         <br><br>
+                        <div class="icons">
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a> -->
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/SpiritBmb.gif" alt="" loading="lazy">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Spirit Bomb Visualization in Unity</h3>
+                        <div class="portfolioTextgrid">
+                           
+                           <p>
+                            <span style="font-size: 20px;"><b>Overview: </b></span>
+                            <br><br>
+                              I created a dynamic Spirit Bomb scene in Unity using VFX Graph and Shader Graph for a personal project. 
+                              This involved crafting captivating visual effects, designing a toon shader for the character, 
+                              and modeling a Namek-inspired environment with Blender.
+                           </p>
+                          
+                           <p> 
+                            <span style="font-size: 20px;"><b>Highlights: </b></span>
+                            <br><br>
+                              <b>VFX Graph Mastery:</b> Developed stunning visual effects to bring the Spirit Bomb to life.
+                              <br><br>
+                              <b>Custom Toon Shader:</b> Created a unique shader for the character to enhance the overall aesthetic.
+                              <br>
+                           </p>
+                           <p>
+                            <br><br>
+                             <b>Namek Environment:</b> Modeled trees in Blender and textured the environment in Photoshop, capturing the essence of Namek.
+                           </p>
+                        </div>
+                        <br><br>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a> -->
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Robot Rival.gif" alt="" loading="lazy">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Robot Rival Racing</h3>
+                        <div class="portfolioTextgrid">
+                           
+                           <p>
+                            <span style="font-size: 20px;"><b>Overview: </b></span>
+                            <br><br>
+                              "Robot Rival Racing" is a thrilling linear stunt time attack racing game, drawing inspiration from the 
+                              futuristic aesthetics of TRON. In this project, I meticulously crafted a dynamic and visually stunning 
+                              racing experience optimized for seamless gameplay on both iOS and Android platforms.
+                           </p>
+                          
+                           <p> 
+                            <span style="font-size: 20px;"><b>Highlights: </b></span>
+                            <br><br>
+                              <b>Sci-Fi Aesthetics:</b> Captivating TRON-inspired sci-fi style for a visually immersive and futuristic environment.
+                              <br><br>
+                              <b>Environment Animations and VFX:</b> Personally created captivating environment animations and visual effects for a cohesive and visually striking atmosphere.
+                              <br>
+                           </p>
+                           <p>
+                            <br><br>
+                            <b>iOS and Android Compatibility:</b> Rigorous optimization for flawless performance on both platforms, balancing visual richness with optimal frame rates.
+                           </p>
+                        </div>
+                        <!-- <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Pokeyball.gif" alt="" loading="lazy">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Pokeyball Clone</h3>
+                        <div class="portfolioTextgrid">
+                           
+                           <p>
+                            <span style="font-size: 20px;"><b>Overview: </b></span>
+                            <br><br>
+                            Embarked on the creation of a captivating Pokeyball clone, drawing inspiration from the highly popular official game developed by Voodoo Studios.
+                           </p>
+                          
+                           <p> 
+                            <span style="font-size: 20px;"><b>Highlights: </b></span>
+                            <br><br>
+                              <b>Gameplay Mimicry: </b> Successfully recreated the engaging ball gameplay mechanics of the official Pokeyball game from Voodoo Studios.
+                              <br><br>
+                              <b>Design Accuracy: </b> Ensured the visual and aesthetic elements closely resembled the original Pokeyball game for an authentic player experience.
+                              <br>
+                           </p>
+                           
+                           <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a> -->
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Crickster.gif" alt="" loading="lazy">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Crickster - Cricket Board Game</h3>
+                        <div class="portfolioTextgrid">
+                           
+                           <p>
+                            <span style="font-size: 20px;"><b>Overview: </b></span>
+                            <br><br>
+                            Crickster is a unique cricket board game designed for the Google Playstore, seamlessly blending 
+                            the classic elements of snakes and ladders with the excitement of cricket. 
+                           </p>
+                          
+                           <p> 
+                            <span style="font-size: 20px;"><b>Highlights: </b></span>
+                            <br><br>
+                              <b>Cricket meets Snakes and Ladders: </b> Merged the thrill of cricket with the unpredictable twists of snakes and ladders, 
+                              creating a captivating and entertaining board game.
+                              <br><br>
+                              <b>Environment Animations and VFX:</b> Crafted an engaging gameplay experience that appeals to both cricket
+                               enthusiasts and board game lovers.
+                              <br>
+                           </p>
+                           <p>
+                            <span style="font-size: 20px;"><b>Achievements: </b></span>
+                            <br><br>
+                            <b>Score Management Systems: </b> Developed and optimized systems to accurately manage scores, 
+                            enhancing the competitive and strategic aspects of the game.
+                            <br><br>
+                            <b>Card Systems: </b>Implemented innovative card systems that add strategic depth, providing players with exciting opportunities
+                             to influence the course of the game.
+                           </p>
+                        </div>
+                        <br><br>
+                        <div class="icons">
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a> -->
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/FPS.gif" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Zombie Attack</h3>
+                        <div class="portfolioTextgrid">
+                           <p>
+                            <span style="font-size: 20px;"><b>Overview: </b></span>
+                            <br><br>
+                              Zombie Attack is my personal FPS playground, a passion project where I delve into the intricacies of 
+                              zombie AI. Designed as a perpetual practice space, it's a project I revisit whenever the desire to implement new features in AI strikes.
+                           </p>
+                          
+                           <p> 
+                            <span style="font-size: 20px;"><b>AI Focus: </b></span>
+                            <br><br>
+                            In this personal FPS venture, the spotlight is firmly on refining and experimenting with zombie behavior. Whether it's tweaking responsiveness, 
+                            enhancing intelligence, or exploring adaptability, Zombie Attack is a living canvas for perfecting the undead AI experience.
+                           </p>
+                        </div>
+                        <br><br>
+                        <div class="icons">
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a> -->
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a> -->
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Become an Expert in Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Become a Web Designer in 10 Days
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Debbuging made easy with Web Inspector
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Get started with Web Design and UI Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                This is what you need to know about Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me</h4>
+                        <p>
+                            Feel free send me a message relating anything that might peek your interest. I'll try my best to respond within a single day.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location: Karachi, Pakistan</span>
+                                </div>
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <br>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email: osama.rehman96@gmail.com</span>
+                                </div>
+                                <p>
+                                    <span></span>
+                                </p>
+                            </div>
+                            <br>
+                            <!-- <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span>: Sussex University, East Sussex</span>
+                                </p>
+                            </div> -->
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number : +923412205781</span>
+                                </div>
+                                <p>
+                                    <span></span>
+                                </p>
+                            </div>
+                            <br>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages: English, Urdu, German (A2)</span>
+                                </div>
+                                <p>
+                                    <span></span>
+                                </p>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME">
+                                <input type="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <a href="#" class="main-btn">
+                                    <span class="btn-text">Download CV</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <!-- <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div> -->
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+          var targetSection = document.getElementById(sectionId);
+      
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      </script>
+      
+    
+</body>
+</html>
