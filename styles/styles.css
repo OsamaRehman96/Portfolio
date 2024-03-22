@@ -42,7 +42,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
-  transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
 }
 
 a {
@@ -77,7 +77,7 @@ section {
 
 .active {
   display: block;
-  animation: appear 1s ease-in-out;
+  /* animation: appear 1s ease-in-out; */
   transform: translateY(0) scaleY(1);
 }
 @keyframes appear {
@@ -1077,4 +1077,260 @@ section {
 }
 
 
+.viewMore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  border: 2px solid var(--color-primary); /* Green border */
+  border-radius: 25px; /* Adjust the border-radius for more or less roundness */
+  background-color: transparent; /* Transparent background to show border */
+  color:var(--color-primary); /* Green text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 200px;
+}
+
+/* Icon styling */
+.viewMore-button i {
+  margin-left: 10px; /* Adjust the spacing between text and icon */
+}
+
+.viewMore-button .btn-icon {
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-left: 10px; /* Add margin to create space between text and icon */
+}
+
+/* Hover effect */
+.viewMore-button:hover {
+  background-color:var(--color-primary); /* Green background on hover */
+  color:var(--color-secondary); /* White text color on hover */
+}
+
+
+.back-btn {
+  top: 5%;
+  left: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+
+.back-btn:active {
+  transform: translateY(-3px);
+}
+
+.back-btn:hover{
+  background-color:var(--color-secondary); /* Green background on hover */
+  color:var(--color-secondary); /* White text color on hover */
+}
+
+.back-btn i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
+.back-btn:hover i {
+  color: var(--color-white);
+}
+
+
+.underline {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-secondary);
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .back-btn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+.portfolio-detail-container {
+  width: 80%;
+  margin: 0 auto; /* Center-align the container */
+  text-align: center; /* Center-align the text inside the container */
+}
+
+
+
+.portfolio-detail-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 auto; /* Center-align the image */
+}
+
+.portfolio-detail-container h1{
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.portfolio-detail-container p {
+  text-align: left; /* Adjust text alignment as needed */
+  margin: 30px 80px;
+}
+
+.portfolio-detail-img {
+  margin: 0 auto; /* Center-align the container */
+  width: 70%;
+  text-align: right; /* Align text inside the container to the right */
+  padding: 30px 0;
+}
+
+
+
+.portfolio-detail-img img {
+  width: 120%; /* Make the image fill its container */
+  display: block;
+  border-radius: 20px 0 0 20px; /* Adjust border radius accordingly */
+  margin: 0 auto; /* Center-align the image */
+}
+
+@media (max-width: 768px) {
+  .portfolio-detail-img {
+    max-width: 100%; /* This will limit the maximum width of the image to 100% of the container width */
+  }
+}
+
+.portfolio-detail-about {
+  border: 1px solid var(--color-grey-5);
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+  width: 600px; /* Add this line to set the width of the box */
+  height: 400px ;
+   margin: 50px 0 0px 0px;
+}
+
+.portfolio-detail-about h2 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 20px;
+  text-align: left;
+}
+
+.portfolio-detail-about p {
+  font-size: 1rem;
+  margin: 20px;
+  text-align: left;
+  
+}
+
+.portfolio-detail-platforms {
+  border: 1px solid var(--color-grey-5);
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+  width: 300px; /* Add this line to set the width of the box */
+  height: 400px ;
+   margin: 0px 0 0px 0px;
+}
+
+
+.portfolio-detail-about-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+  gap: 20px; /* Add some gap between the columns */
+  margin: 0 auto 20px;
+  max-width: 400px; /* Set a maximum width for the grid */
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-detail-about-grid {
+    grid-template-columns: 1fr; /* Change the layout to 2 columns on smaller screens */
+    max-width: 100%;
+  }
+
+  .portfolio-detail-about {
+     /* Adjust the height for smaller screens */
+    width: 100%;
+  }
+
+  .portfolio-detail-about h2 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-detail-about p {
+    font-size: 1rem;
+  }
+
+  .portfolio-detail-platforms {
+     /* Adjust the height for smaller screens */
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-detail-about-grid {
+    grid-template-columns: 1fr; /* Change the layout to 1 column on very small screens */
+    max-width: 100%;
+  }
+}
+
+.portfolio-detail-about:hover{
+  border: 1px solid var(--color-secondary);
+}
+
+
+
+
+.carousel-container {
+  display: flex; /* or grid */
+    justify-content: center; /* Horizontally center the carousel */
+    align-items: center; /* Vertically center the carousel */
+    height: 50vh; /* Adjust the height as needed */
+    
+}
+
+.carousel {
+  width: 1300px; /* Adjust the width of the carousel */
+  max-width: 8000px; /* Optional: Set maximum width */
+  /* Add any other styles you need for your carousel */
+}
+
+@media screen and (max-width: 768px) {
+  .carousel{
+    
+   width : 70vh;
+  }
+    
+}
+
+@media (min-width: 768px) {
+  .carousel-container {
+    height: 80vh; /* height is bigger on medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-container {
+    height: 100vh; /* height is back to 100% on larger screens */
+  }
+}
 /*# sourceMappingURL=styles.css.map */
