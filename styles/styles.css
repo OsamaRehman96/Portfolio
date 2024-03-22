@@ -1045,14 +1045,15 @@ section {
   align-items: center;
   justify-content: center;
   padding: 10px 5px;
-  border: 2px solid var(--color-secondary); /* Green border */
+ /* border: 2px solid var(--color-secondary); /* Green border */
   border-radius: 25px; /* Adjust the border-radius for more or less roundness */
-  background-color: transparent; /* Transparent background to show border */
+  background-color: var(--color-grey-4); /* Transparent background to show border */
   color:var(--color-secondary); /* Green text color */
   text-decoration: none; /* Remove underline from links */
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
   width: 200px;
+  height: 50px;
 }
 
 /* Icon styling */
@@ -1082,10 +1083,10 @@ section {
   align-items: center;
   justify-content: center;
   padding: 10px 5px;
-  border: 2px solid var(--color-primary); /* Green border */
+ 
   border-radius: 25px; /* Adjust the border-radius for more or less roundness */
-  background-color: transparent; /* Transparent background to show border */
-  color:var(--color-primary); /* Green text color */
+  background-color: white; /* Transparent background to show border */
+  color:var(--color-grey-4); /* Green text color */
   text-decoration: none; /* Remove underline from links */
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -1109,7 +1110,7 @@ section {
 
 /* Hover effect */
 .viewMore-button:hover {
-  background-color:var(--color-primary); /* Green background on hover */
+  background-color:var(--color-black); /* Green background on hover */
   color:var(--color-secondary); /* White text color on hover */
 }
 
@@ -1333,4 +1334,25 @@ section {
     height: 100vh; /* height is back to 100% on larger screens */
   }
 }
+
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Gap between grid items */
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill img {
+  width: 100px; /* Adjust image width as needed */
+  height: 100px; /* Adjust image height as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image round */
+  margin-bottom: 10px; /* Add space below the image */
+}
+
+
 /*# sourceMappingURL=styles.css.map */
