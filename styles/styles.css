@@ -1350,7 +1350,7 @@ section {
   width: 100px; /* Adjust image width as needed */
   height: 100px; /* Adjust image height as needed */
   object-fit: cover; /* Maintain aspect ratio */
-  border-radius: 50%; /* Make the image round */
+  border-radius: 20%; /* Make the image round */
   margin-bottom: 10px; /* Add space below the image */
 }
 
