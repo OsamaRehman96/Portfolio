@@ -1168,8 +1168,8 @@ section {
 
 .portfolio-detail-container {
   width: 80%;
-  margin: 0 auto; /* Center-align the container */
-  text-align: center; /* Center-align the text inside the container */
+  margin: 0 auto; 
+  text-align: left; /* Center-align the text inside the container */
 }
 
 
@@ -1190,8 +1190,12 @@ section {
 }
 
 .portfolio-detail-container p {
-  text-align: left; /* Adjust text alignment as needed */
+  /* text-align: left; 
   margin: 30px 80px;
+  padding: 0px 120px 0px 0px; */
+  width: 90%; /* Match the paragraph width to 90% of its container */
+  max-width: 1000px; /* Set a maximum width for the paragraph */
+  margin: 20px auto; /* Center the paragraph horizontally */
 }
 
 .portfolio-detail-img {
@@ -1214,6 +1218,10 @@ section {
   .portfolio-detail-img {
     max-width: 100%; /* This will limit the maximum width of the image to 100% of the container width */
   }
+
+  /* .portfolio-detail-container p {
+    padding: 0px 50px 0px 0px;
+  } */
 }
 
 .portfolio-detail-about {
@@ -1301,18 +1309,19 @@ section {
 
 
 
-.carousel-container {
-  display: flex; /* or grid */
-    justify-content: center; /* Horizontally center the carousel */
-    align-items: center; /* Vertically center the carousel */
-    height: 50vh; /* Adjust the height as needed */
+/* .carousel-container {
+  display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 5vh; 
+  
     
 }
 
 .carousel {
-  width: 1300px; /* Adjust the width of the carousel */
-  max-width: 8000px; /* Optional: Set maximum width */
-  /* Add any other styles you need for your carousel */
+  width: 1300px; 
+  max-width: 8000px; 
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -1325,21 +1334,48 @@ section {
 
 @media (min-width: 768px) {
   .carousel-container {
-    height: 80vh; /* height is bigger on medium screens */
+    height: 60vh; 
   }
 }
 
 @media (min-width: 992px) {
   .carousel-container {
-    height: 100vh; /* height is back to 100% on larger screens */
+    height: 80vh; 
   }
+} */
+
+
+.carousel {
+  position: relative;
+  width: 90%; /* Set the carousel width to 90% of its container */
+  max-width: 1200px; /* Set a maximum width for the carousel */
+  margin: 0 auto; /* Center the carousel horizontally */
 }
+
+
+
+.carousel-item img {
+  width: 100%; /* Make the images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.carousel-indicators {
+  bottom: 10px; /* Position the indicators at the bottom */
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  overflow: hidden; /* Ensure the rounded corners are applied properly */
+}
+
+
 
 
 .skill-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Gap between grid items */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 30px; /* Gap between grid items */
 }
 
 .skill {
@@ -1347,12 +1383,53 @@ section {
 }
 
 .skill img {
-  width: 100px; /* Adjust image width as needed */
-  height: 100px; /* Adjust image height as needed */
+  width: 110px; /* Adjust image width as needed */
+  height: 110px; /* Adjust image height as needed */
   object-fit: cover; /* Maintain aspect ratio */
   border-radius: 20%; /* Make the image round */
   margin-bottom: 10px; /* Add space below the image */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
 }
+
+.skill img:hover{
+  transform: translateY(-3px);
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Basic styling for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px 8px 8px 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 200px; /* Adjust the width as needed */
+}
+
+
+
+th {
+  background-color:var(--color-secondary); /* Yellow */
+}
+
+
+/* Styling for the table container */
+.table-container {
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: left;;
+}
+
 
 
 /*# sourceMappingURL=styles.css.map */
