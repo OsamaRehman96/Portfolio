@@ -31,36 +31,54 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+              
+
+
                 
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Projects/Adana/craft-your-dream-game-in-unity-be-it-fps-or-rpg.jfif" class="d-block w-100" alt="...">
+                    <img src="Projects/Loops/Main.gif" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                        
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="Projects/Adana/craft-your-dream-game-in-unity-be-it-fps-or-rpg (1).jfif" class="d-block w-100" alt="...">
+                <div class="carousel-item active">
+                    <img src="Projects/Loops/Escape.gif" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        
+                       
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="Projects/Adana/craft-your-dream-game-in-unity-be-it-fps-or-rpg (2).jfif" class="d-block w-100" alt="...">
+                <div class="carousel-item active">
+                    <img src="Projects/Loops/Characters.gif" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                     
+                       
                     </div>
-                
+                </div>
+                <div class="carousel-item active">
+                    <img src="Projects/Loops/Modes.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="Projects/Loops/Time.gif" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    </div>
+                </div>
                
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:rgba(0, 0, 0, 0.5); border-radius: 30%;"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color:rgba(0, 0, 0, 0.5); border-radius: 30%;"></span>
                 <span class="visually-hidden">Next</span>
             </button>
     </div>
@@ -74,16 +92,10 @@
         <div class="portfolio-detail-container">
 
            
-            <p>  <b>Reaching the Top</b> is a 2D RPG visual novel style game designed specifically for the Saudi Business Center (SBC) to help their 
-                employees learn the ettiquetes of dealing with differnt type of customers. The story follows a new employee (the player) who has landed a job
-                at SBC, during the gameplay the player travels to various locations in Riyadh as he figures out his new job and eventually rise up to become 
-                a manager.<br>
+            <p>  <b>Loops</b> is a hyper casual game targeted for Android and IOS platform. The goal of the game is to collide the ball with rings
+                of the same color by tapping the screen to change the direction of the ball. The game has four different modes, each with a different 
+                gameplay, you can also adjust the speed of the game manually if you want a challenging experience. <br>
             </p>
-            <p>
-                I led the development of this project with a team of talented designers, handling programming and animations of the game and successfully completed
-                 the development of this project in a year. 
-                
-            </p>    
            
             <p>  Some notable features I implemented in this project:
             </p> 
@@ -100,67 +112,31 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>In-depth Dialogue System</td>
-                                <td>I developed a dialogue system from scratch that is capable of reading dialogues from a document and storing it in the game.</n>
-                                The system also handles multiple player answer choices, nested dialogues and NPCs responses and reactions</td>
-                            </tr>
-                            <tr>
-                                <td>Character Creator</td>
-                                <td>Implemented a 2D character creator with 150+ clothing items and accessories for male and female gender. This system 
-                                    uses JSON and server loading states to load avatar data.</td>
-                            </tr>
-                            <tr>
-                                <td>Cloudsave & Cross-saves</td>
-                                <td>I developed a local and online saving system making it easy to for the player to access their saves on all available platforms.</td>
-                            </tr>
-                            <tr>
-                                <td>Emotion Manager</td>
-                                <td>I created a system responsible for controlling the reactions and emotions of the player and NPCs in the game. The system uses 
-                                    enums and string to keep track of the current state of emotions during the game.
+                                <td>Sound-Gameplay</td>
+                                <td>Implemented an audio system that reacts to the speed of the game, so for players who want a challenge the music will speed up as 
+                                    you progress. This can be adjusted in the main menu.
                                 </td>
                             </tr>
                             <tr>
-                                <td>Snappy User Interface</td>
-                                <td> In a visual novel style game, one of the most important aspect is the UI, I developed scripts that displayed the emotions of the NPCs and player 
-                                    in the dialogue UI as well as reflect whatever clothes the have equipped. I wrote scripts to dynamically adjust UI for different screen ratios.
-                                </td>
+                                <td>Gameplay-Modes</td>
+                                <td>Implemented 4 different gameplay modes in the game. </td>
                             </tr>
                             <tr>
-                                <td>Sound Manager</td>
-                                <td>Created a layered audio system focusing on tuning and adjusting audio levels throught the game during cutscenes and voiceovers.</td>
+                                <td>Particles</td>
+                                <td>All the characters in this project are created using Unity's Particl System.</td>
+                            </tr>
+                            <tr>
+                                <td>Infinite Level Design</td>
+                                <td>I implemented a level generator that is capable of generating infinite levels of the game and also takes into account the progressiong of
+                                    the player by increasing difficulty as you progress.
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
 
-                <p>  Other noteworthy contributions:
-                </p> 
-              
-    
-              
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Feature</th>
-                                    <th>Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Particle Effects</td>
-                                    <td>I created visual effects to better depict emotions and for use in cutscenes during the game using Unity's Particle System.</td>
-                                </tr>
-                                <tr>
-                                    <td>Cutscene & Character Animations</td>
-                                    <td>I rigged and animated all the characters inside Unity and created cutscenes by using Unity's Timeline and Cinemachine components.</td>
-                                </tr>
-                               
-                            </tbody>
-                        </table>
-                    </div>
-
+               
 
 
 
