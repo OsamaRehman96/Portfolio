@@ -6,7 +6,7 @@
 }
 
 :root {
-  --color-primary: #191d2b;
+  --color-primary: #161616;
   --color-secondary: #27AE60;
   --color-white: #FFFFFF;
   --color-black: #000;
@@ -1431,5 +1431,64 @@ th {
 }
 
 
+
+/*new stuff*/
+.header
+{
+  text-align: center;
+    
+}
+
+.header-container
+{
+  width: 100%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+  text-align: center; /* Center align the text */
+}
+
+.headerBGImg
+{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* set the width */
+  height: auto; /* maintain aspect ratio */
+}
+.headerHeroImg
+{
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: auto;
+  z-index: 2;
+}
+
+.heading {
+  position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 125px;
+    z-index: 1;
+    overflow: hidden;
+    white-space: wrap;
+}
+
+.lightHeading
+{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+  z-index: 3;
+  overflow: hidden;
+  white-space: wrap
+}
 
 /*# sourceMappingURL=styles.css.map */
